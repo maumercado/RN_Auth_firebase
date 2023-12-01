@@ -1,15 +1,17 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import AuthContent from '../components/Auth/AuthContent'
 import LoadingOverlay from '../components/ui/LoadingOverlay'
 import { createUser } from '../utils/auth'
 
 function SignupScreen () {
   const [isAuthenticating, setIsAuthenticating] = useState(false)
+  const authCtx = useContext(AuthContext)
 
   async function signupHandler ({ email, password }) {
     setIsAuthenticating(true)
     try {
-      await createUser(email, password)
+      const token = await createUser(email, password)
+      authCtx.authenticate(token)
     } catch (err) {
       Alert.alert('Registering User Failed!', err.message)
     }
