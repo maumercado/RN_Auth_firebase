@@ -18,8 +18,8 @@ function SignupScreen () {
       authCtx.authenticate(token)
     } catch (err) {
       Alert.alert('Registering User Failed!', err.message)
+      setIsAuthenticating(false)
     }
-    setIsAuthenticating(false)
   }
 
   if (isAuthenticating) {
