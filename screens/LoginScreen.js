@@ -1,22 +1,22 @@
-import { useState } from 'react';
-import AuthContent from '../components/Auth/AuthContent';
-import LoadingOverlay from '../components/ui/LoadingOverlay';
-import { login } from '../utils/auth';
+import { useState } from 'react'
+import AuthContent from '../components/Auth/AuthContent'
+import LoadingOverlay from '../components/ui/LoadingOverlay'
+import { login } from '../utils/auth'
 
-function LoginScreen() {
+function LoginScreen () {
   const [isAuthenticating, setIsAuthenticating] = useState(false)
 
-  async function loginHandler({ email, password }) {
+  async function loginHandler ({ email, password }) {
     setIsAuthenticating(true)
     await login(email, password)
     setIsAuthenticating(false)
   }
 
   if (isAuthenticating) {
-    return <LoadingOverlay message="Authenticating User..." />;
+    return <LoadingOverlay message='Authenticating User...' />
   }
 
-  return <AuthContent isLogin onAuthenticate={loginHandler}/>;
+  return <AuthContent isLogin onAuthenticate={loginHandler} />
 }
 
-export default LoginScreen;
+export default LoginScreen
