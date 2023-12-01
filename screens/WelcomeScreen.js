@@ -10,10 +10,9 @@ function WelcomeScreen () {
 
   useEffect(() => {
     axios.get('https://rn-expensetracker-6ebbf-default-rtdb.firebaseio.com/message.json?auth=' + authCtx.token)
-    .then((response) => {
-      console.log(response.data)
-      setFetchedMessage(response.data)
-    })
+      .then((response) => {
+        setFetchedMessage(response.data)
+      })
   }, [])
   return (
     <View style={styles.rootContainer}>
