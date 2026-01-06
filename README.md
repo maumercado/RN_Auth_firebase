@@ -20,12 +20,14 @@ Simple React Native application demonstrating basic authentication using Firebas
                 - ## Installation
                
                 - 1. Clone this repository:
+                 
                   2. ```bash
                      git clone https://github.com/maumercado/RN_Auth_firebase.git
                      cd RN_Auth_firebase
                      ```
 
                      2. Install dependencies:
+                    
                      3. ```bash
                         npm install
                         ```
@@ -37,12 +39,12 @@ Simple React Native application demonstrating basic authentication using Firebas
                                     
                                         - 4. Run the application:
                                          
-                                          5. For iOS:
+                                          5. **For iOS:**
                                           6. ```bash
                                              npm run ios
                                              ```
 
-                                             For Android:
+                                             **For Android:**
                                              ```bash
                                              npm run android
                                              ```
