@@ -5,60 +5,59 @@ Simple React Native application demonstrating basic authentication using Firebas
 ## Features
 
 - User registration with email and password
-- - User login/logout functionality
-  - - Firebase Authentication integration
-    - - Token management and storage
-      - - Welcome screen with authentication status
-        - - Splash screen on app launch
+- User login/logout functionality
+- Firebase Authentication integration
+- Token management and storage
+- Welcome screen with authentication status
+- Splash screen on app launch
          
-          - ## Requirements
+## Requirements
          
-          - - Node.js 18 or above
-            - - React Native development environment
-              - - Firebase account and project
+- Node.js 18 or above
+- React Native development environment
+- Firebase account and project
                
-                - ## Installation
+## Installation
                
-                - 1. Clone this repository:
+1. Clone this repository:
                  
-                  2. ```bash
-                     git clone https://github.com/maumercado/RN_Auth_firebase.git
-                     cd RN_Auth_firebase
-                     ```
+```bash
+git clone https://github.com/maumercado/RN_Auth_firebase.git
+cd RN_Auth_firebase
+```
 
-                     2. Install dependencies:
+2. Install dependencies:
                     
-                     3. ```bash
-                        npm install
-                        ```
+```bash
+npm install
+```
 
-                        3. Configure Firebase:
-                        4.    - Create a Firebase project at https://console.firebase.google.com
-                              -    - Enable Email/Password authentication in Firebase Console
-                                   -    - Add your Firebase configuration to the project
-                                    
-                                        - 4. Run the application:
-                                         
-                                          5. **For iOS:**
-                                          6. ```bash
-                                             npm run ios
-                                             ```
+3. Configure Firebase:
+    - Create a Firebase project at https://console.firebase.google.com
+    - Enable Email/Password authentication in Firebase Console
+    - Add your Firebase configuration to the project
 
-                                             **For Android:**
-                                             ```bash
-                                             npm run android
-                                             ```
+4. Run the application:
+    **For iOS:**
+    ```bash
+    npm run ios
+    ```
 
-                                             ## Project Structure
+    **For Android:**
+    ```bash
+    npm run android
+    ```
 
-                                             - `components/` - Reusable UI components
-                                             - - `screens/` - Application screens
-                                               - - `store/` - State management and authentication logic
-                                                 - - `constants/` - Application constants
-                                                   - - `utils/` - Utility functions
+## Project Structure
+
+- `components/` - Reusable UI components
+- `screens/` - Application screens
+- `store/` - State management and authentication logic
+- `constants/` - Application constants
+- `utils/` - Utility functions
+
+## Technologies
                                                     
-                                                     - ## Technologies
-                                                    
-                                                     - - React Native
-                                                       - - Firebase Authentication
-                                                         - - React Context API for state management
+- React Native
+- Firebase Authentication
+- React Context API for state management
